@@ -1,5 +1,10 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  },
   "width": 800,
   "height": 450,
   "title": "Unicorn Companies Worldwide",
@@ -31,6 +36,11 @@
       "data": {
         "url": "https://raw.githubusercontent.com/Yanhao-Troye/FIT3179_Homework-9/main/Data/unicorn_with_lat_long.csv"  
       },
+      "transform": [
+        {
+          "filter": "datum.longitude > -180 && datum.longitude < 180 && datum.latitude > -90 && datum.latitude < 90"
+        }
+      ],
       "mark": {
         "type": "circle",
         "stroke": "black",  
@@ -49,9 +59,9 @@
         "color": {
           "field": "TotalValuation",  
           "type": "quantitative",
-          "title": "Total Valuation (in billion USD)",
+          "title": "Total Valuation (billion)",
           "scale": {
-            "scheme": "reds"
+            "scheme": "purples"
           }
         }
       }
@@ -64,5 +74,7 @@
         "text": {"field": "Country"}
       }
     }
+    
   ]
+  
 }
