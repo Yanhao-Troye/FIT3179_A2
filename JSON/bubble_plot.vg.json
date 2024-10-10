@@ -3,7 +3,7 @@
   "width": 500,
   "height": 400,
   "data": {
-    "url": "https://raw.githubusercontent.com/Yanhao-Troye/FIT3179_Homework_week10/main/Data/valuation_unicorn_data.csv",
+    "url": "https://raw.githubusercontent.com/Yanhao-Troye/FIT3179_A2/main/Dataset/valuation_unicorn_data.csv",
     "format": {"type": "csv"}
   },
   "params": [
