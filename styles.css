@@ -14,7 +14,7 @@
 }
 
 .headertext {
-    text-align: left;
+    text-align: center;
     color: blueviolet;
     top: 50%;
     width: 100%;
@@ -32,7 +32,7 @@
 h2 {
     text-align: center;
     font-family: 'Arial';
-    font-size: 20px;
+    font-size: 25px;
     color: #AC8823;
     padding-top: 50px;
 }
@@ -56,6 +56,7 @@ h2 {
 .lollipopcontainer{
     width: 100%;
     padding-bottom: 40px;
+    margin: auto;
 }
 
 .bubblecontainer{
@@ -63,13 +64,15 @@ h2 {
     padding-left: 10px;
     padding-right: 40px;
     padding-bottom: 40px;
+    margin: auto;
 }
 
 .wordcloudcontainer{
     width: 100%;
-    padding-left: 90px;
+    padding-left: 120px;
     padding-right: 40px;
     padding-bottom: 40px;
+    margin: auto;
 
 }
 
@@ -80,11 +83,18 @@ body *{
 
 
 p{
-    font-size: 14px;
+    font-size: 15px;
     text-align: justify;
+    font-family: 'Open Sans', sans-serif;
 }
 
 .pure-g {
     margin-bottom: 15px;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid #ccc;
+    width: 100%;
 }
 
