@@ -1,11 +1,10 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 400,
-  "height": 400,
+  "width": 900,
+  "height": 500,
   
   "data": {
-    "url": "https://raw.githubusercontent.com/Yanhao-Troye/FIT3179_A2/main/Dataset/lollipop.csv",
-    "format": {"type": "csv"}
+    "url": "https://raw.githubusercontent.com/Yanhao-Troye/FIT3179_A2/main/Dataset/lollipop.csv"
   },
   "layer": [
     {
