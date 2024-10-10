@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+  <title>Worldwide Unicorn Companies</title>
+  <!-- Import Vega & Vega-Lite -->
+  <script src="https://cdn.jsdelivr.net/npm/vega@5.20.2"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-lite@5.1.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/vega-embed@6.17.0"></script>
+
+  <!-- Import pure.css -->
+  <link rel="stylesheet" href="https://unpkg.com/purecss@2.0.3/build/pure-min.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Google font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+  <div class="page">
+    <!-- Header Section -->
+    <div class="pure-g">
+        <div class="pure-u-1-1">
+          <div class="headercontainer">
+            <div class="headertext">
+              <h1 class="h1center">Worldwide Unicorn Companies</h1>
+              <p>A unicorn means a privately owned startup valued at over $1 billion. 
+                 The term "unicorn" has been widely used to refer to startups in technology, 
+                 mobile technology, and information technology.
+                 As of 2024, there are already more than 1,200 unicorns in the world.
+                 Now, I'm going to show you some data about unicorns and hopefully 
+                 provide you some insight into investments and business.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+  <line>
+    <!-- Map Section -->
+    <div class="pure-g">
+        <div class="pure-u-1-1">
+            <h2> The distribution of the unicorn companies all over the world</h2>
+            <p> From the proportional symbol map we find that USA have the highest number of unicorn companies which is 647, followed by China and India are the 
+                second and third countries that have the highest number of unicorn companies.
+            </p>
+        </div>
+    
+        <div class="pure-u-1-1">
+            <div id="map" class="mapcontainer"></div>
+        </div>
+    </div>
+
+
+    <!-- sankey Section -->
+    <div class="pure-g">
+        <div class="pure-u-1-1">
+            <h2>The countries with the top 5 unicorn companies and their industry flows</h2>
+            <p> From the sankey chart we can observe that The US and China cover a wide range of industries, 
+                with most of the US unicorns being about internet softwarte and fintech, while China is more evenly split in every industry.
+            </p>
+        </div>
+
+        <div class="pure-u-1-1">
+            <div id="sankey" class="sankeycontainer"></div>
+        </div>
+    </div>
+
+    
+
+    <!-- lollipop & bubble plot Section -->
+     <div class="pure-g">
+        <div class="pure-u-1-1">
+            <h2>The most valuable companies and industries</h2>
+            <p>Now, let's find out which companies and industries are most valuable. 
+               Having a higher value industry means that it may be a popular industry in today's society, 
+               but it also means that you will face higher competition if you want to join. 
+               From the lollipop chart, we can find that Byte dance and spacex both have high valuation. 
+               It shows that technology-related industries are relatively profitable industries today. 
+               And through bubble plot, we also proved that Internetsoftware, an industry related to the Internet, 
+               is indeed more valuable than other industries.
+            </p>
+        </div>
+
+        <div class="pure-u-1-2">
+            <div id="lollipop" class="lollipopcontainer"></div>
+        </div>
+
+        <div class="pure-u-1-2">
+            <div id="bubble" class="bubblecontainer"></div>
+        </div>
+    </div>
+
+
+    <!-- wordcloud Section -->
+    <div class="pure-g">
+        <div class="pure-u-1-1">
+            <h2>Investors of unicorn companies</h2>
+            <p> Through this wordcloud, we can see which companies have invested in unicorns, 
+                and through the data we find that accel has invested in the most unicorns which is 64. 
+                Andreessen Horowitz followed which invest 59 unicorn companies.
+            </p>
+        </div>
+
+        <div class="pure-u-1-1">
+            <div id="wordcloud" class="wordcloudcontainer"></div>
+        </div>
+    </div>
+
+   <!--footer-->
+   <div class="pure-g">
+    <div class="pure-u-1-1">
+      <div class="headerText"> 
+        <p> Author: Yanhao Wang</p>
+        <p> Dataset: Aspersh Upadhyay upload to kaggle two years ago </p>
+        
+        
+      </div>
+    </div>
+ </div>
+
+
+
+
+ <script type="text/javascript">
+    var proportional_symbol_map = "unicorn_company.vg.json";
+    var sankey = "sankey.json";
+    var lollipop = "lollipop.json";
+    var bubble = "bubble_plot.vg.json";
+    var wordcloud = "wordcloud.json"
+    
+
+    vegaEmbed('#map', proportional_symbol_map, { "actions": false }).then(function (result) {
+      // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+      }).catch(console.error);
+
+    vegaEmbed('#sankey', sankey, { "actions": false }).then(function (result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+      }).catch(console.error);
+
+    vegaEmbed('#lollipop', lollipop, { "actions": false }).then(function (result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+      }).catch(console.error);
+
+    vegaEmbed('#bubble', bubble, { "actions": false }).then(function (result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+      }).catch(console.error);
+
+    vegaEmbed('#wordcloud', wordcloud, { "actions": false }).then(function (result) {
+        // Access the Vega view instance (https://vega.github.io/vega/docs/api/view/) as result.view
+      }).catch(console.error);
+      
+  </script>
+    
+</body>
+</html>
