@@ -1,0 +1,90 @@
+.page {
+    width: 1000px;
+    background-color: white;
+    margin: auto;
+    padding: 50px;
+    padding-top: 35px;
+}
+
+
+
+.headercontainer {
+    text-align: center;
+    position: relative;
+}
+
+.headertext {
+    text-align: left;
+    color: blueviolet;
+    top: 50%;
+    width: 100%;
+}
+    
+
+
+.h1center{
+    text-align: center;
+    font-weight: bold;
+    font-size: 50px;
+}
+
+
+h2 {
+    text-align: center;
+    font-family: 'Arial';
+    font-size: 20px;
+    color: #AC8823;
+    padding-top: 50px;
+}
+
+
+
+.mapcontainer{
+    width: 100%;
+    padding-left: 60px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+}
+
+
+.sankeycontainer{
+    width: 100%;
+    padding-right: 120px;
+    padding-bottom: 40px;
+}
+
+.lollipopcontainer{
+    width: 100%;
+    padding-bottom: 40px;
+}
+
+.bubblecontainer{
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+}
+
+.wordcloudcontainer{
+    width: 100%;
+    padding-left: 90px;
+    padding-right: 40px;
+    padding-bottom: 40px;
+
+}
+
+
+body *{
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+p{
+    font-size: 14px;
+    text-align: justify;
+}
+
+.pure-g {
+    margin-bottom: 15px;
+}
+
