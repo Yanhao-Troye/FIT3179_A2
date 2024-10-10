@@ -1,7 +1,8 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "width": 500,
-  "height": 400,
+  
+  "width": 850,
+  "height": 450,
   "data": {
     "url": "https://raw.githubusercontent.com/Yanhao-Troye/FIT3179_A2/main/Dataset/valuation_unicorn_data.csv",
     "format": {"type": "csv"}
@@ -154,6 +155,9 @@
   "config": {
   "axisX": {"grid": false},
   "axisY": {"grid": false},
-  "legend": {"disable": true}
+  "legend": {"disable": true},
+  "view": {
+      "stroke": null}
 }
 }
+
