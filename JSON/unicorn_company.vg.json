@@ -61,7 +61,9 @@
           "type": "quantitative",
           "title": "Total Valuation (billion)",
           "scale": {
-            "scheme": "purples"
+            "scheme": "reds",
+            "domain": [0, 500, 1000, 1500, 2000,2500],
+            "range": ["#fff5f0", "#fcbba1", "#fb6a4a", "#de2d26", "#a50f15","#941313"]
           }
         }
       }
